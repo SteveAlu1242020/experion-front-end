@@ -1,0 +1,28 @@
+.sidebar {
+  width: 80px;
+  height: 912px;
+  background: $primaryBlue;
+  @include breakpoint-down(medium) {
+    display: none;
+  }
+  .wrapper {
+    .logo {
+      img {
+        padding: 23px 26px 0 26px;
+        cursor: pointer;
+        margin-bottom: 124.6px;
+      }
+    }
+    .page-tabs {
+      > * {
+        padding: 24.5px 29.5px;
+        @include flex(center, center, row);
+        cursor: pointer;
+      }
+    }
+  }
+}
+
+.active {
+  background: $activeViolet;
+}

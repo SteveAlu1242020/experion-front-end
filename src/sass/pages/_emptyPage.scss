@@ -1,0 +1,6 @@
+.empty-page {
+  @include flex(top, center, column);
+  padding: 2rem;
+  box-sizing: border-box;
+  width: 100%;
+}
