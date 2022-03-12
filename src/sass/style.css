@@ -35,13 +35,19 @@ body {
 
 .sidebar {
   width: 80px;
-  height: 912px;
+  height: 150vh;
   background: #0f255f;
 }
 
 @media (max-width: 63.9375em) {
   .sidebar {
     display: none;
+  }
+}
+
+@media (min-width: 87.5em) {
+  .sidebar {
+    height: 100vh;
   }
 }
 
@@ -91,6 +97,21 @@ body {
   width: 485px;
   height: 753px;
   background: #ffffff;
+  overflow: hidden;
+}
+
+@media (min-width: 40em) {
+  .side-filter .modal {
+    max-height: 753px;
+    overflow: auto;
+  }
+}
+
+@media (min-width: 87.5em) {
+  .side-filter .modal {
+    overflow: hidden;
+    max-height: 767px;
+  }
 }
 
 @media (max-width: 39.9375em) {
@@ -647,6 +668,42 @@ body {
   line-height: 16px;
 }
 
+.products-page .filter-panel-top .wrapper .title .code {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: start;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  font-size: small;
+  border: 1px solid gray;
+  padding: 0.25rem;
+  width: 7rem;
+  border-radius: 1rem;
+  opacity: 0.7;
+}
+
+.products-page .filter-panel-top .wrapper .title .code:hover {
+  opacity: 1;
+  cursor: pointer;
+}
+
+.products-page .filter-panel-top .wrapper .title .code .icon {
+  margin-right: 2px;
+}
+
+.products-page .filter-panel-top .wrapper .title .code a {
+  color: #000000;
+  text-decoration: none;
+}
+
 .products-page .filter-panel-top .wrapper .filters {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -825,6 +882,12 @@ body {
   border-radius: 0.5rem;
   -webkit-box-shadow: 0px 16px 24px rgba(0, 0, 0, 0.06), 0px 2px 6px rgba(0, 0, 0, 0.04), 0px 0px 1px rgba(0, 0, 0, 0.04);
           box-shadow: 0px 16px 24px rgba(0, 0, 0, 0.06), 0px 2px 6px rgba(0, 0, 0, 0.04), 0px 0px 1px rgba(0, 0, 0, 0.04);
+}
+
+@media (min-width: 87.5em) {
+  .products-page .product-wrapper .product-card .item {
+    width: 310px;
+  }
 }
 
 .products-page .product-wrapper .product-card .item img {

@@ -1,9 +1,13 @@
 .sidebar {
   width: 80px;
-  height: 912px;
+  // height: 912px;
+  height: 150vh;
   background: $primaryBlue;
   @include breakpoint-down(medium) {
     display: none;
+  }
+  @include breakpoint-up(xlarge) {
+    height: 100vh;
   }
   .wrapper {
     .logo {

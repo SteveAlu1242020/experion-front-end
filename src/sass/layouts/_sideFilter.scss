@@ -13,9 +13,18 @@
     top: 0;
     bottom: 0;
     width: 485px;
-    height: 753px;
     // height: auto;
+    height: 753px;
     background: $white;
+    overflow: hidden;
+    @include breakpoint-up(medium) {
+      max-height: 753px;
+      overflow: auto;
+    }
+    @include breakpoint-up(xlarge) {
+      overflow: hidden;
+      max-height: 767px;
+    }
 
     @include breakpoint-down(small) {
       top: 133px;

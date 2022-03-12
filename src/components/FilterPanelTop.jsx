@@ -2,6 +2,7 @@ import React from "react";
 import { useState } from "react";
 import SideFilter from "../layouts/SideFilter";
 import productInfo from "../json/ProductInfo";
+import { BsCodeSlash } from "react-icons/bs";
 
 const FilterPanelTop = ({ setSelectFilter, selectFilter, newArrival }) => {
   const [sideFilter, setSideFilter] = useState(false);
@@ -10,6 +11,12 @@ const FilterPanelTop = ({ setSelectFilter, selectFilter, newArrival }) => {
     <div className="wrapper">
       <div className="title">
         <p>Filters based on your profile</p>
+        <p className="code">
+          <BsCodeSlash className="icon" />{" "}
+          <a href="https://www.google.com/" target="_blank">
+            See The Code
+          </a>
+        </p>
       </div>
       <div className="filters">
         <div className="left">{/* <button>Size</button> */}</div>
