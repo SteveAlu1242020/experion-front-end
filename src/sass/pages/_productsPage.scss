@@ -30,7 +30,7 @@
         }
       }
       .right {
-        @include flex(start, center, row);
+        @include flex(flex-start, center, row);
         @include breakpoint-down(small) {
           @include flex(space-between, center, column);
           width: 100%;
@@ -53,7 +53,7 @@
               width: 370px;
               margin-right: 0;
             }
-            @include flex(start, center, row);
+            @include flex(flex-start, center, row);
             img {
               padding: 11px 5px 13px 15px;
             }
@@ -74,7 +74,7 @@
           }
         }
         &_inner-right {
-          @include flex(start, center, row);
+          @include flex(flex-start, center, row);
           @include breakpoint-down(small) {
             @include flex(space-between, center, row);
             width: 100%;
@@ -139,16 +139,18 @@
         font-size: 14px;
         line-height: 16px;
         .code {
-          @include flex(start, center, row);
+          @include flex(flex-start, center, row);
           font-size: small;
           border: 1px solid gray;
           padding: 0.25rem;
           width: 7rem;
           border-radius: 1rem;
-          opacity: 0.7;
+          opacity: 0.5;
+          transition: opacity 200ms ease-out;
           &:hover {
             opacity: 1;
             cursor: pointer;
+            transition: opacity 100ms ease-in;
           }
           .icon {
             margin-right: 2px;
@@ -256,7 +258,7 @@
         }
       }
 
-      @include flex(start, center, column);
+      @include flex(flex-start, center, column);
       &:hover {
       }
       .item {

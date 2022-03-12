@@ -6,7 +6,7 @@ import john from "../assets/icons/john.jpg";
 import dropdown from "../assets/icons/drop-down.png";
 import logoBlue from "../assets/icons/logo-blue.svg";
 
-const Topbar = () => {
+const Topbar = ({ searchItem, setSearchItem }) => {
   return (
     <div className="top-bar">
       <div className="wrapper">
@@ -23,6 +23,10 @@ const Topbar = () => {
               <img src={search} alt="search" />
               <input
                 type="text"
+                value={searchItem}
+                onChange={(e) => {
+                  setSearchItem(e.target.value);
+                }}
                 name=""
                 id=""
                 placeholder="Search for products, brands and more"

@@ -4,7 +4,12 @@ import SideFilter from "../layouts/SideFilter";
 import productInfo from "../json/ProductInfo";
 import { BsCodeSlash } from "react-icons/bs";
 
-const FilterPanelTop = ({ setSelectFilter, selectFilter, newArrival }) => {
+const FilterPanelTop = ({
+  setSelectFilter,
+  selectFilter,
+  newArrival,
+  topBarSearch,
+}) => {
   const [sideFilter, setSideFilter] = useState(false);
 
   return (
@@ -13,7 +18,10 @@ const FilterPanelTop = ({ setSelectFilter, selectFilter, newArrival }) => {
         <p>Filters based on your profile</p>
         <p className="code">
           <BsCodeSlash className="icon" />{" "}
-          <a href="https://www.google.com/" target="_blank">
+          <a
+            href="https://github.com/SteveAlu1242020/shopping-page-template"
+            target="_blank"
+            rel="noreferrer">
             See The Code
           </a>
         </p>
@@ -33,8 +41,11 @@ const FilterPanelTop = ({ setSelectFilter, selectFilter, newArrival }) => {
       <div className="total-sort">
         <div className="total">
           <p>
-            Showing{" "}
-            {selectFilter === "none" ? productInfo.length : newArrival.length}{" "}
+            Showing {}
+            {/* {topBarSearch ? topBarSearch.length : ""}{" "} */}
+            {selectFilter === "none"
+              ? productInfo.length
+              : newArrival.length}{" "}
             Products
           </p>
         </div>
