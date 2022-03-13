@@ -13,7 +13,7 @@ const productInfo = [
         title: "Bond Street By Red Tape Remixa Sneakers",
         category: "Men Crater Remixa Sneakers",
         categoryType: 0,
-        price: 5467,
+        price: 89,
         image: product1,
         new: false,
         alt: "product1"
@@ -23,7 +23,7 @@ const productInfo = [
         title: "Puma (new)",
         category: "Men Crater Remixa Sneakers",
         categoryType: 0,
-        price: 6499,
+        price: 129,
         image: product2,
         new: true,
         alt: "product2"
@@ -33,7 +33,7 @@ const productInfo = [
         title: "Vero Moda (new)",
         category: "Women Crater Remixa Sneakers",
         categoryType: 1,
-        price: 2769,
+        price: 99,
         image: product3,
         new: true,
         alt: "product3"
@@ -43,7 +43,7 @@ const productInfo = [
         title: "Carnatia W Running Shoes For Women",
         category: "Women Crater Remixa Sneakers",
         categoryType: 1,
-        price: 3734,
+        price: 159,
         image: product4,
         new: false,
         alt: "product4"
@@ -53,7 +53,7 @@ const productInfo = [
         title: "Vero Moda (new)",
         category: "Women Crater Remixa Sneakers",
         categoryType: 1,
-        price: 5467,
+        price: 149,
         image: product5,
         new: true,
         alt: "product5"
@@ -63,7 +63,7 @@ const productInfo = [
         title: "WROGN (new)",
         category: "Men Crater Remixa Sneakers",
         categoryType: 0,
-        price: 1234,
+        price: 79,
         image: product6,
         new: true,
         alt: "product6"
@@ -73,7 +73,7 @@ const productInfo = [
         title: "ADIDAS",
         category: "Men Crater Remixa Sneakers",
         categoryType: 0,
-        price: 3734,
+        price: 199,
         image: product7,
         new: false,
         alt: "product7"
@@ -83,7 +83,7 @@ const productInfo = [
         title: "Mast &Harbour (new)",
         category: "Men Crater Remixa Sneakers",
         categoryType: 0,
-        price: 1234,
+        price: 59,
         image: product8,
         new: true,
         alt: "product8"

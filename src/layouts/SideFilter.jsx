@@ -45,27 +45,27 @@ const SideFilter = ({ sideFilter, setSideFilter }) => {
             <div className="price_wrapper">
               <div className="box">
                 <input type="checkbox" name="" id="" />
-                Rs. 1997 to Rs. 6172 <span>(106)</span>
+                $39 to $59 <span>(106)</span>
               </div>
               <div className="box">
                 <input type="checkbox" name="" id="" />
-                Rs. 10347 to Rs. 14522 <span>(14)</span>
+                $60 to $79 <span>(14)</span>
               </div>
               <div className="box">
                 <input type="checkbox" name="" id="" />
-                Rs. 6172 to Rs. 10347 <span>(16)</span>
+                $80 to $99 <span>(16)</span>
               </div>
               <div className="box">
                 <input type="checkbox" name="" id="" />
-                Rs. 14522 to Rs. 18697 <span>(5)</span>
+                $100 to $119 <span>(5)</span>
               </div>
               <div className="box">
                 <input type="checkbox" name="" id="" />
-                Rs. 10347 to Rs. 14522 <span>(14)</span>
+                $120 to $139 <span>(14)</span>
               </div>
               <div className="box">
                 <input type="checkbox" name="" id="" />
-                Rs. 14522 to Rs. 18697 <span>(5)</span>
+                $140+ <span>(5)</span>
               </div>
             </div>
           </div>

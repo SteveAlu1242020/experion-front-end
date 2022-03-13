@@ -9,7 +9,7 @@ const ProductCard = ({ props }) => {
         <div className="description">
           <p>{props.title}</p>
           <p>{props.category}</p>
-          <p>Rs.{props.price}</p>
+          <p>${props.price}</p>
         </div>
         <div className="add-to-cart">
           <button

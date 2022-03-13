@@ -58,7 +58,9 @@ const ProductsPage = () => {
           setSelectFilter={setSelectFilter}
           selectFilter={selectFilter}
           newArrival={newArrival}
-          topBarSearch={topBarSearch}
+          // topBarSearch={topBarSearch}
+          // setTopBarSearch={setTopBarSearch}
+          setSearchItem={setSearchItem}
         />
       </div>
       <div className="product-wrapper">{productCardData}</div>

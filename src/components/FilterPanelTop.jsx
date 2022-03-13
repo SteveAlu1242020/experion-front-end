@@ -8,14 +8,14 @@ const FilterPanelTop = ({
   setSelectFilter,
   selectFilter,
   newArrival,
-  topBarSearch,
+  setSearchItem,
 }) => {
   const [sideFilter, setSideFilter] = useState(false);
 
   return (
     <div className="wrapper">
       <div className="title">
-        <p>Filters based on your profile</p>
+        {/* <p>Filters based on your profile</p> */}
         <p className="code">
           <BsCodeSlash className="icon" />{" "}
           <a
@@ -29,7 +29,12 @@ const FilterPanelTop = ({
       <div className="filters">
         <div className="left">{/* <button>Size</button> */}</div>
         <div className="right">
-          <p>Clear all</p>
+          <p
+            onClick={() => {
+              setSearchItem("");
+            }}>
+            Clear all
+          </p>
           <button
             onClick={() => {
               setSideFilter(!sideFilter);
